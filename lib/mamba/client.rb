@@ -4,8 +4,8 @@ module Mamba
   class Client
     attr_reader :calls,:accounting
 
-    def initialize(server,user=nil,password=nil,accounting=false)
-      @client = XMLRPC::Client.new2("https://#{server}/rpc/api")
+    def initialize(server,user=nil,password=nil,accounting=false,timeout=30)
+      @client = XMLRPC::Client.new2("https://#{server}/rpc/api",nil,timeout)
 
       if accounting
         @accounting = true
