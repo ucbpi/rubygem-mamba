@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'mamba'
-  s.version     = '0.0.1.pre'
-  s.date        = '2015-02-27'
+  s.version     = '0.0.2'
+  s.date         = Date.today.to_s
   s.summary     = 'A very lightweight wrapper for RHN Satellite'
   s.description = 'A lightweight wrapper around RHN Satellite that supports sessions'
   s.author      = 'Aaron Russo'
